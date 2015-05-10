@@ -10,4 +10,8 @@ describe("ping_pong") do
   it("returns 'ping' if the number is divisible by 3") do
     expect((3).ping_pong).to(eq([1, 2, 'ping']))
   end
+
+  it("returns 'pong' if the number is divisible by 5") do
+    expect((5).ping_pong).to(eq([1, 2, 'ping', 4, 'pong']))
+  end
 end

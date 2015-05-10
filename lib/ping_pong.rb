@@ -6,6 +6,8 @@ class Fixnum
       var = time.+(1)
       if var.%(3) == 0
         new_array.push('ping')
+      elsif var.%(5) == 0
+        new_array.push('pong')
       elsif
         new_array.push(var)
       end
