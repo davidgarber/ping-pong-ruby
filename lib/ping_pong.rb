@@ -4,11 +4,13 @@ class Fixnum
     new_array = []
     self.times() do |time|
       var = time.+(1)
-      if var.%(3) == 0
-        new_array.push('ping')
+      if var.%(3) == 0 && var.%(5) == 0
+        new_array.push('ping-pong')
       elsif var.%(5) == 0
         new_array.push('pong')
-      elsif
+      elsif var.%(3) == 0
+      new_array.push('ping')
+      else
         new_array.push(var)
       end
     end
